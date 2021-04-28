@@ -15,7 +15,7 @@ export class ProduitService {
       star : 4,
       description:
         ["Notre thé corps express 100% naturel et bien plus performant que le thé corps simple agit dans votre organisme en coupe faim et brûleur de graisses. De plus il lutte contre la reprise du poids et brûle en moyenne 8kg en 20 jours "],
-      client_satisfait: '5',
+      client_satisfait: '45',
       duree: '15',
       mois_ajout: 'Mar',
       annee_ajout: '20',
@@ -92,7 +92,7 @@ export class ProduitService {
       o_prix: '10000',
       description:
         ["Reconnu par son éfficacité auprès de nos clients, notre thé ventre plat express 100% naturel et coupe faim de base vient brûler les graisses abdominales, et vous empêcher une reprise du ventre. Généralement utilisé après la maternité et consommation de bières il vous permet une perte de 8cm du tour de taille en 25 jours"],
-      client_satisfait: '8',
+      client_satisfait: '63',
       duree: '15',
       mois_ajout: 'Avr',
       annee_ajout: '20',
@@ -162,7 +162,7 @@ export class ProduitService {
       o_prix: '8000',
       description:
         ["Notre thé Hypertension, est reconnue pour ses propriétés d\'antidépresseur, mais aussi régule la tension, lutte contre vos troubles digestifs, favorise la bonne circulation sanguine et empêche la formation des cailloux ."],
-      client_satisfait: '6',
+      client_satisfait: '26',
       duree: '20',
       mois_ajout: 'Avr',
       annee_ajout: '20',
@@ -203,7 +203,7 @@ export class ProduitService {
       star : 3,
       description:
         ["Reconnu par son éfficacité auprès de nos clients, Notre Thé Hypertension améliore la digestion, lutte contre les douleurs rhumatismales, réduit les risques de calcul rénaux et régule le cholestérol"],
-      client_satisfait: '6',
+      client_satisfait: '41',
       duree: '25',
       mois_ajout: 'Avr',
       annee_ajout: '20',
@@ -245,7 +245,7 @@ export class ProduitService {
       star : 4,
       description:
         ["Reconnu par son éfficacité auprès de nos clients, notre thé Energy augmente la libido, vous redonne du tonus et revigore l'organisme"],
-      client_satisfait: '7',
+      client_satisfait: '34',
       duree: '40',
       mois_ajout: 'Avr',
       annee_ajout: '20',
@@ -275,7 +275,7 @@ export class ProduitService {
           post: 'WhatsApp',
           rate: 3,
           content: 'c\'est du lourd ce produit, faut revoir le goût sinon ce produit est vraiment efficace '
-        },
+        }
       ]
     },
     {
@@ -287,7 +287,7 @@ export class ProduitService {
       star : 4,
       description:
         ["Cette Crème seins 100% naturel et sans effets sécondaire est une crème raffermissante ayant pour but d'augmenter, soulever, reformer votre poitrine.  Les premiers resultats se font ressentir au bout de la troisième semaine."],
-      client_satisfait: '8',
+      client_satisfait: '87',
       duree: '45',
       mois_ajout: 'Juin',
       annee_ajout: '20',
@@ -344,7 +344,7 @@ export class ProduitService {
       o_prix: '7000',
       description:
         ["Cette Crème fesses 100% naturel et sans effets sécondaire est une crème raffermissante ayant pour but d'augmenter, soulever, reformer votre fessier.  Les premiers resultats se font ressentir au bout de la troisième semaine."],
-      client_satisfait: '24',
+      client_satisfait: '78',
       duree: '45',
       mois_ajout: 'Juin',
       annee_ajout: '20',
@@ -393,7 +393,7 @@ export class ProduitService {
       o_prix: '6000',
       description:
         ["Cette Crème anti-vergeture 100% naturel et sans effets sécondaire est composé de végétaux et produits à porté de main, elle assure à votre peau un nettoyage de vos vergetures jusqu\'à 95% tout en protegeant votre peau d'une nouvelle appariation de vergetures."],
-      client_satisfait: '7',
+      client_satisfait: '56',
       duree: '45',
       mois_ajout: 'Fev',
       annee_ajout: '20',
@@ -450,7 +450,7 @@ export class ProduitService {
       o_prix: '8000',
       description:
         ["Reconnu par ses propriétés purificatrices, notre Huile Tâches Noires élimine les taches noires rebelles, nettoie les aisselles et entre jambes, efface les boutons et cicatrices et adoucit la peau"],
-      client_satisfait: '8',
+      client_satisfait: '64',
       duree: '45',
       mois_ajout: 'Avr',
       annee_ajout: '20',
@@ -506,7 +506,7 @@ export class ProduitService {
       star : 4,
       description:
         ["Notre Huile pour Cerne, est connue pour être une puissante décongestionnante veineuse, elle sera très efficace sur les cernes causées par un problème circulatoire."],
-      client_satisfait: '8',
+      client_satisfait: '45',
       duree: '45',
       mois_ajout: 'Avr',
       annee_ajout: '20',
@@ -548,7 +548,7 @@ export class ProduitService {
       star : 4,
       description:
         ["Reconnues pour son efficacité auprès de nos clients, notre Huile pour Quintaux élimine les taches des zones noires (orteils, pieds, coudes…), unifie et élimine les quinto des peaux normales et dures, éclaircit et adoucit la peau sans toute fois l\’arracher"],
-      client_satisfait: '8',
+      client_satisfait: '29',
       duree: '45',
       mois_ajout: 'Avr',
       annee_ajout: '20',

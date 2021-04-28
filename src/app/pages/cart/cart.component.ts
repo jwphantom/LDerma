@@ -23,10 +23,12 @@ export class CartComponent implements OnInit {
 
   submitForm: boolean = false;
 
+  @Input() sendOrder: Boolean = true;
+
 
   constructor(private produitService: ProduitService,
     private route: ActivatedRoute,
-    public router : Router,
+    public router: Router,
     private title: Title,
     private formBuilder: FormBuilder,
     private cookieService: CookieService) { }
@@ -34,7 +36,6 @@ export class CartComponent implements OnInit {
   ngOnInit() {
 
     this.initForm();
-
 
     let cartLocal = localStorage.getItem('cart');
     if (cartLocal) {
@@ -131,10 +132,12 @@ export class CartComponent implements OnInit {
     });
   }
 
-  onSubmitBillForm() {
+  async onSubmitBillForm() {
     this.billForm.controls['name'].disable();
     this.billForm.controls['phone'].disable();
     this.billForm.controls['ville'].disable();
+
+    $( ".failedSend" ).remove();
 
     this.submitForm = !this.submitForm
 
@@ -152,35 +155,74 @@ export class CartComponent implements OnInit {
 
     }, 1000);
 
+    setTimeout(function () {
+      $(".body-inner").fadeIn("slow");
+      $("body").find(".animsition-loading").fadeOut("slow");
+
+    }, 3000);
+
+    const send = await this.sendMail(this.billForm.get('name').value, this.billForm.get('phone').value, this.billForm.get('ville').value, this.price + this.ship, produit)
+
+
+    if (send == true) {
+      setTimeout(function () {
+        $(".body-inner").fadeIn("slow");
+        $("body").find(".animsition-loading").fadeOut("slow");
+
+      }, 2000);
+      localStorage.removeItem('cart');
+      this.cart = [];
+      localStorage.setItem('orderSend', 'true');
+      this.router.navigate(['/shop']);
+
+    }
+
+
+    if (send == false) {
+
+      setTimeout(function () {
+        $(".body-inner").fadeIn("slow");
+        $(".shopa").append('<div class="alert alert-danger alert-dismissible fade show failedSend" role="alert"> Echec d\'envoi, Ressayez plus tard<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
+        $("body").find(".animsition-loading").fadeOut("slow");
+
+      }, 2000);
+
+      this.billForm.controls['name'].enable();
+      this.billForm.controls['phone'].enable();
+      this.billForm.controls['ville'].enable();
+      this.submitForm = !this.submitForm
+
+
+    }
+
+  }
+
+  sendMail(nom, phone, ville, montant, produit) {
     var templateParams = {
-      nom: this.billForm.get('name').value,
-      phone: this.billForm.get('phone').value,
-      ville: this.billForm.get('ville').value,
-      montant: this.price + this.ship,
+      nom: nom,
+      phone: phone,
+      ville: ville,
+      montant: montant,
       produit: produit,
       email: 'sudogen.enterprise@gmail.com'
 
     };
-    emailjs.send('service_6x8boil', 'template_tgbje51', templateParams, 'user_3UNPpOCkDvySRx4kLn1Lk')
-      .then(function (response) {
 
-        console.log('SUCCESS!', response.status, response.text);
-        localStorage.setItem('statutSend', JSON.stringify(response.status));
-        
+    return new Promise(resolve => {
+      emailjs.send('service_6x8boil', 'template_tgbje51', templateParams, 'user_3UNPpOCkDvySRx4kLn1Lk')
+        .then(function (response) {
 
-      }, function (err) {
-        console.log('FAILED...', err);
-      });
+          resolve(true);
+          console.log('SUCCESS!', response.status, response.text);
 
-      if(localStorage.getItem('statutSend') == '200'){
+        }, function (err) {
+          resolve(false);
+          console.log('FAILED...', err);
+        });
 
-        $(".body-inner").fadeIn("slow");
-        $("body").find(".animsition-loading").fadeOut("slow");
-        localStorage.removeItem('cart');
-        this.cart = [];
-        localStorage.setItem('orderSend','true');
-        this.router.navigate(['/shop']);
-      }
+    });
+
   }
 
 }
+
