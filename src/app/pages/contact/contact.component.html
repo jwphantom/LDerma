@@ -1,0 +1,82 @@
+<!-- Body Inner -->
+<div class="body-inner">
+
+    <!-- Header -->
+    <header id="header" data-fullwidth="true">
+        <div class="header-inner">
+            <div class="container">
+                <!--Logo-->
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.jpg" class="logo-default">
+                    </a>
+                </div>
+                <!--End: Logo-->
+
+                <!--Header Extras-->
+                <app-language [cart]="cart.length"></app-language>
+                <!--end: Header Extras-->
+                <!--Navigation Resposnive Trigger-->
+                <div id="mainMenu-trigger">
+                    <a class="lines-button x"><span class="lines"></span></a>
+                </div>
+                <!--end: Navigation Resposnive Trigger-->
+                <!--Navigation-->
+                <app-menu></app-menu>
+                <!--end: Navigation-->
+            </div>
+        </div>
+    </header>
+    <!-- end: Header -->
+    <!-- Google Map -->
+    <div id="slider" class="inspiro-slider dots-creative" data-height-xs="360">
+        <!-- Slide 2 -->
+        <div class="slide kenburns" style="background-image:url('assets/images/world-contact.png');">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="slide-captions text-center text-light">
+                    <!-- Captions -->
+                    <span class="strong">{{ 'contact.w_to_f_u'|translate }}</span>
+                    <h1>{{ 'contact.title'|translate }}</h1>
+                    <!-- end: Captions -->
+                </div>
+            </div>
+        </div>
+        <!-- end: Slide 2 -->
+
+    </div><!-- end: Google Map -->
+    <!-- CONTENT -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12  text-center">
+                    <h3 class="text-uppercase">{{ 'contact.contact_us'|translate }}</h3>
+                    <p>{{ 'contact.desc'|translate }}</p>
+                    <div class="row m-t-40">
+                        <div class="col-lg-6">
+                            <address>
+                                <strong>LifeDerma, Store.</strong><br>
+                                Boutique 13, Face Hilton, Yaoundé, Cameroun <br>
+                                <abbr title="Phone">P: (+237) 657 591 738 </abbr>
+                            </address>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+                    <!-- Début de widget en ligne Calendly -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/lifederma-store/rdv-store"
+                        style="min-width:320px;height:630px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
+                        async></script>
+                    <!-- Fin de widget en ligne Calendly -->
+                </div>
+            </div>
+        </div>
+    </section> <!-- end: Content -->
+    <app-footer></app-footer>
+</div>
+<!-- end: Body Inner -->
+<!-- Scroll top -->
+<app-scroll-top></app-scroll-top>

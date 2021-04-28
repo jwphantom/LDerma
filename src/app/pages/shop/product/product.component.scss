@@ -1,0 +1,61 @@
+.t_product{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.p_product{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.old_price{
+    text-decoration: line-through;
+    color: #888888;
+}
+
+
+.btn_pck {
+    padding: 10px;
+    margin: 7px;
+    border:none;
+    text-transform: capitalize;
+    border:solid thin black;
+    background: rgba(255, 255, 255,0);
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+.btn_pck:active {
+    background:none;
+    color:none;
+    border-color: none; 
+}
+
+button:active{
+    background:none;
+    color:none;
+    border-color: none; 
+}
+
+.order_button{
+    margin: 1px;
+    margin-top: 10px;
+}
+
+.order_button a{
+    border-radius: 0px;
+}
+
+.back_product_button{
+    margin: 1px;
+    margin-top: 10px;
+}
+
+.back_product_button a{
+    border-radius: 0px;
+}

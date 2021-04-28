@@ -1,0 +1,159 @@
+<div class="body-inner">
+    <!-- Header -->
+    <header id="header" data-fullwidth="true">
+        <div class="header-inner">
+            <div class="container">
+                <!--Logo-->
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.jpg" class="logo-default">
+                    </a>
+                </div>
+                <!--End: Logo-->
+                <!--Header Extras-->
+                <app-language [cart]="cart.length"></app-language>
+                <!--end: Header Extras-->
+                <!--Navigation Resposnive Trigger-->
+                <div id="mainMenu-trigger"> <a class="lines-button x"><span class="lines"></span></a> </div>
+                <!--end: Navigation Resposnive Trigger-->
+                <!--Navigation-->
+                <app-menu></app-menu>
+                <!--end: Navigation-->
+            </div>
+        </div>
+    </header>
+    <!-- end: Header -->
+    <!-- Inspiro Slider -->
+    <div id="slider" class="inspiro-slider dots-creative" data-height-xs="360">
+        <!-- Slide 2 -->
+        <div class="slide kenburns" style="background-image:url('assets/images/about/about.jpg');">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="slide-captions text-center text-light">
+                    <!-- Captions -->
+                    <span class="strong">{{ 'about.who_are_you'|translate }}</span>
+                    <h1>{{ 'about.title'|translate }}</h1>
+                    <!-- end: Captions -->
+                </div>
+            </div>
+        </div>
+        <!-- end: Slide 2 -->
+
+    </div>
+    <!--end: Inspiro Slider -->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="heading-text heading-section">
+                        <h2>AFRIZON</h2>
+
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            {{ 'about.desc_line1'|translate }} 
+                            <br><br>
+                            {{ 'about.desc_line2'|translate }}
+                            <br><br>
+                            {{ 'about.desc_line3'|translate }}
+                            <br><br>
+                            {{ 'about.desc_line4'|translate }}
+                            <br><br>
+                            {{ 'about.desc_line5'|translate }}
+                        </div>
+
+                        <div class="col-lg-6"><iframe src="https://www.youtube.com/embed/C7NdShlrRAQ" 
+                            height="301" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="box-fancy section-fullwidth text-light p-b-0">
+        <div class="row">
+            <div style="background-color:#917d5d" class="col-lg-4">
+                <h1 class="text-lg text-uppercase">01.</h1>
+                <h3>{{ 'about.power01_title'|translate }}</h3>
+                <span>{{ 'about.power01_desc'|translate }} </span>
+            </div>
+
+            <div style="background-color:#a08c6c" class="col-lg-4">
+                <h1 class="text-lg text-uppercase">02.</h1>
+                <h3>{{ 'about.power02_title'|translate }}</h3>
+                <span>{{ 'about.power02_desc'|translate }}
+                </span>
+            </div>
+
+            <div style="background-color:#ad9979" class="col-lg-4">
+                <h1 class="text-lg text-uppercase">03.</h1>
+                <h3>{{ 'about.power03_title'|translate }}</h3>
+                <span>{{ 'about.power03_desc'|translate }}
+            </span>
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class="container">
+            <div class="heading-text text-center">
+                <h2>{{ 'about.temoignages'|translate }}</h2>
+                <p class="lead text-center">
+                    {{ 'about.temoignagnes_intro'|translate }}</p>
+            </div>
+            <!-- Testimonials -->
+            <div class="carousel arrows-visibile testimonial testimonial-single testimonial-left" data-items="1">
+
+                <!-- Testimonials item -->
+                <div class="testimonial-item">
+                    <img src="assets/images/team/male-23.jpg" alt="">
+                    <p style="font-size: 15px;" >Priority of a store in the sale of sports equipment. The biggest concern in this sector 
+                        is the right customers to sell the stock, multiple descents on the ground without results my brother decides to take
+                         me to see it. CEO of AFRIZON. After a long explanation of my problem he decides to introduce me to the 
+                         Afrizone network. Today I am gradually starting to have customers interested in my products.</p>
+                    <span>Mr Andrew</span>
+                    <span>CEO, The fitness Shop</span>
+                </div>
+                <!-- end: Testimonials item-->
+
+                <!-- Testimonials item -->
+                <div class="testimonial-item">
+                    <img src="assets/images/team/female-30.jpg" alt="">
+                    <p style="font-size: 15px;">Je detiens une parfemurie, il y a pas plus tard que 2 mois mon chiffre d'affaire était
+                        approximativement de 120.000 FCFA/semaine depuis 2ans, j'ai cru longtemps que cela était impossible de faire plus
+                        mais depuis mon entrée dans le réseau AFRIZON, je vends aujourd'hui pas moins de 340.000FCFA/semaine!</p>
+                    <span>Mme Marion</span>
+                    <span>Promotrice Mak's Beauty </span>
+                </div>
+                <!-- end: Testimonials item-->
+
+                <!-- Testimonials item -->
+                <div class="testimonial-item">
+                    <img src="assets/images/team/male-32.jpg" alt="">
+                    <p style="font-size: 15px;">Je suis propriétaire d’une boutique de vente d’appareil électronique au marché central de yaoundé depuis 6 ans.
+                         Avant mon entrée à AFRIZON je réussissais déjà à générer des chiffres conséquents mais par curiosité j’ai voulu 
+                         m’affilier au réseau. Je n’avais pas prévu que les ventes allaient triplé en seulement 3 mois. J’ai dû m’associer 
+                         mes collègues afin de  satisfaire la demande car le réseaux de vente me permet de vendre dans au moins 5 villes. 
+                    </p>
+                    <span>Mr William Monre</span>
+                    <span>Commerçant</span>
+                </div>
+                <!-- end: Testimonials item-->
+
+            </div>
+            <!-- end: Testimonials -->
+        </div>
+    </section>
+
+   <app-footer></app-footer>
+    <!-- end: Footer -->
+</div> <!-- end: Body Inner -->
+<!-- Scroll top -->
+<app-scroll-top></app-scroll-top>

@@ -1,0 +1,89 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "service": "Service",
+        "about": "A propos",
+        "shop": "Boutique",
+        "contact": "Contact"
+    },
+
+    "footer": {
+        "horaire_travail": "Heure de Travail",
+        "lundi": "Lundi",
+        "vendredi": "Vendredi",
+        "samedi": "Samedi",
+        "location": "Localisation",
+        "adresse" : "Adresse",
+        "contact" : "Contact",
+        "tel" : "Téléphone",
+        "commerce-général-relationnel" : "Commerce Général Relationnel",
+        "copyright" : "Tous droits réservés"
+    },
+    "partner": {
+        "title": "Nos Clients",
+        "trust": "Ils  ont décidés de nous faire confiance et s'affilier à nous."
+    },
+
+    "about": {
+        "title": "A propos",
+        "who_are_you" : "Qui sommes-nous?",
+        "desc_line1": "La Société Afrizon a pour objet, directement ou indirectement au Cameroun et à l’étranger : ",
+        "desc_line2" : "- Le marketing relationnel ;",
+        "desc_line3" : "- Intermediation and putting in contact between consumers-clients and professionals;",
+        "desc_line4":"- L’accompagnement et le suivi entrepreneurial",
+        "desc_line5" : "- Et plus généralement, toutes opérations commerciales, financières, industrielles, techniques, mobilières ou immobilières se rattachant directement ou indirectement à l’objet ci-dessus ou à tous autres objets similaires ou connexes.",
+        "power01_title": "Grande Communauté",
+        "power01_desc": "Grâces à notre équipe d'expert en marketing moderne et au fil du temps, nous avons développé et consolidé notre réseau de client et sommes devenus le réseau de vente relationnel le plus vaste d'afrique.",
+        "power02_title": "Moins de Travail",
+        "power02_desc": "Afrizon se charge du plus gros travail, celui de vendre vos produits grâce à son réseau et donc plus besoin de se soucier de cette tâches, juste assurer la disponibilité du stock.",
+        "power03_title": "Une chance pour les PME",
+        "power03_desc": "Chez Afrizon, que vous soyez une Multinationale ou juste un simple commercant, vous bénéficiez de notre réseau, ce qui vous donne la chance d'augmenter votre chiffre d'affaire ",
+        "temoignages": "Quelques Témoignages",
+        "temoignagnes_intro": "Ils apprécient nos services"
+    },
+
+    "service": {
+        "title": "Nos Services",
+        "what_we_do": "Ce que nous faisons",
+        "service01": "Marketing Relationnel",
+        "service01_desc":"Identification des prospects/clients intéressé par un produit, Mise en oeuvre afin de comprendre ces préferences afin de pouvoir les convertir et les fidéliser.",
+        "service02": "Commerce Général",
+        "service02_desc": "Conglomérat de commerçants, et de prestateurs de services.",
+        "service03": "Suivi Entrepreneurial",
+        "service03_desc": "Gestions des commandes, Suivi des ventes, Communication, Marketing",
+        "promotion": "Profitez de notre vaste réseaux de ventes",
+        "promotion_explain": "Augmentez vos profits en adhérents au réseau AFRIZON.",
+        "contact_us" : "CONTACTEZ_NOUS!"
+    },
+
+    "contact": {
+        "title" : "Contact",
+        "w_to_f_u" : "Où nous trouver?",
+        "contact_us": "Contactez-Nous",
+        "desc" : "Des idées, des recommandations, des observations, des réclamations, etc.? Merci de nous laisser un message avec le plus de détails possible."
+    },
+
+    "home" :{
+        "s01_t":"BIENVENUE SUR LIFEDERMA",
+        "s01_d":"Spécialiste en Dermatologie et Cosmétique.",
+        "s02_t":"PRODUITS 100% LOCAUX",
+        "s02_d":"Contribuer aux développement du Cameroun en consommant localement.",
+        "a_t":"A propos de LifeDerma ",
+        "a_d":"LifeDerma est une entreprise africaine basée au cameroun spécialisée dans le secteur de la cosmétiques et de la dermatologie. Grâce à nos scientifiques jeunes et dynamiques et nos partenaires locaux, nous proposons des services 100% naturels.",
+        "start":"Débutez l'aventure avec nous",
+        "date": "Prise de rendez-vous",
+        "skill":"Pourquoi nous choisir?",
+        "skill_d":"chez nous être belle devient un art.",
+        "p01_title": "100% Naturels",
+        "p01_desc": "Nous commercialisons uniquement des produits 100% naturels, conçus localement avec des essences et végetaux utilisés dans la vie courante",
+        "p02_title": "Suivi Clients",
+        "p02_desc": "Lorsque vous achetez un produits LifeDerma ou Associés, Vous bénéficiez automatiquement d'un suivi et de nos astuces pratiques.",
+        "p03_title": "Efficacité Assurée",
+        "p03_desc": "Nos produits sont longuement testés durant des mois avant leurs sorties officielles afin de garantir un taux de satisfaction de 78%."
+    },
+    "shop" :{
+        "title" : "Boutique"
+    }
+
+
+}

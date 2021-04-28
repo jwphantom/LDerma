@@ -1,0 +1,95 @@
+{
+    "nav": {
+        "home": "Home",
+        "service": "Service",
+        "about": "About",
+        "shop": "shop",
+        "contact": "Contact"
+    },
+
+    "footer": {
+        "horaire_travail": "Work timetable",
+        "lundi": "Monday",
+        "vendredi": "Friday",
+        "samedi": "Saturday",
+        "location": "Location",
+        "adresse" : "Address",
+        "contact" : "Contact",
+        "tel" : "Phone",
+        "commerce-général-relationnel" : "General Relational Commerce",
+        "copyright" : "Copyright"
+    },
+
+    "partner": {
+        "title": "Our Clients",
+        "trust": "They decided to trust us and affiliate with us."
+    },
+
+    "about": {
+        "title": "About",
+        "who_are_you" : "Who are you?",
+        "desc_line1": "The purpose of the Afrizon Company is, directly or indirectly in Cameroon and abroad:",
+        "desc_line2" : "- Relationship marketing;",
+        "desc_line3" : "- Intermediation and putting in contact between consumers-clients and professionals;",
+        "desc_line4":"- Entrepreneurial support and monitoring",
+        "desc_line5" : "- And more generally, all commercial, financial, industrial, technical, movable or real estate transactions directly or indirectly related to the above object or to any other similar or related objects.",
+        "power01_title": "Great Community",
+        "power01_desc": "Through our team of modern marketing experts and over time, we have developed and consolidated our customer network and have become the largest relational sales network in Africa.",
+        "power02_title": "Less work",
+        "power02_desc": "Afrizon takes care of the biggest work, that of selling your products through its network and therefore no longer need to worry about this task, just ensuring the availability of stock.",
+        "power03_title": "A chance for SME",
+        "power03_desc": "At Afrizon, whether you are a Multinational or just a simple trader, you benefit from our network, which gives you the chance to increase your turnover",
+        "temoignages": "Testimonials",
+        "temoignagnes_intro": "They appreciate our services."
+    },
+
+    "service": {
+        "title": "Our Services",
+        "what_we_do": "What we do",
+        "service01": "Relationship Marketing",
+        "service01_desc":"Identification of prospects / customers interested in a product, Implementation in order to understand these preferences in order to be able to convert them and retain them.",
+        "service02": "General commerce",
+        "service02_desc": "Conglomerate of traders and service providers.",
+        "service03": "Entrepreneurial follow-up",
+        "service03_desc": "Order management, Sales follow-up, Communication, Marketing",
+        "promotion": "Take advantage of our extensive sales network",
+        "promotion_explain": "Increase your profits by members of the AFRIZON network.",
+        "contact_us" : "CONTACT  US"
+    },
+
+    "contact": {
+        "title" : "Contact",
+        "w_to_f_u" : "Where to find us",
+        "contact_us": "Contact us",
+        "desc" : "Ideas, recommendations, observations, complaints, etc.? Please leave us a message with as much detail as possible."
+    },
+
+    "home" :{
+        "s01_t":"WELCOME TO AFRIZON",
+        "s01_d":"The most revolutionary relational general commerce of the 21st century.",
+        "s02_t":"AFRICAN SALES NETWORKS",
+        "s02_d":"Expand your sales network across Africa.",
+        "a_t":"About Afrizon",
+        "a_d":"Afrizon is an African general trade company based in Cameroon offering the possibility of putting in individual, nominative, continuous and personalized relationship between producers or professionals directly with consumers.",
+        "start":"Start the adventure with us",
+        "date": "Making appointments",
+        "skill":"Why choose us?",
+        "skill_d":"Our priority, the satisfaction of the merchant and the consumer.",
+        "p01_title": "Great Community",
+        "p01_desc": "Much larger buyer customer base than that found on another African platform",
+        "p02_title": "Less work",
+        "p02_desc": "When you partner with AFRIZON, your most important job becomes just ensuring Stock Availability.",
+        "p03_title": "A chance for SME",
+        "p03_desc": "Unlike other networks, at Afrizon, even small traders can join the networks."
+    }
+
+
+
+    
+
+
+
+
+
+    
+}

@@ -1,0 +1,142 @@
+
+
+<div class="body-inner">
+    <!-- Header -->
+    <header id="header" data-fullwidth="true">
+        <div class="header-inner">
+            <div class="container">
+                <!--Logo-->
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.jpg" class="logo-default">
+                    </a>
+                </div>
+                <!--End: Logo-->
+                <!--Header Extras-->
+                <app-language [cart]="cart.length"></app-language>
+                <!--end: Header Extras-->
+                <!--Navigation Resposnive Trigger-->
+                <div id="mainMenu-trigger"> <a class="lines-button x"><span class="lines"></span></a> </div>
+                <!--end: Navigation Resposnive Trigger-->
+                <!--Navigation-->
+                <app-menu></app-menu>
+                <!--end: Navigation-->
+            </div>
+        </div>
+    </header>
+    <!-- end: Header -->
+
+    <section id="product-page" class="product-page p-b-0">
+        <div class="container">
+            <div class="product">
+                <div class="row m-b-40">
+                    <div class="col-lg-6">
+                        <div class="product-image" >
+                            <!-- Carousel slider -->
+                            <div class="carousel dots-inside dots-dark arrows-visible" data-items="1" data-loop="true" data-autoplay="true" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay="2500" data-lightbox="gallery">
+                                <a title="Shop product image!"><img alt="Shop product image!" src="i../../../../assets/images/shop/products/{{ short_name }}.png">
+                                </a>
+                                
+                            </div>
+                            <!-- Carousel slider -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="product-description">
+
+                            <div class="t_product">
+                                {{ nom }}
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <hr>
+                            <div class="p_product">
+                                {{ prix }} XAF <span class="old_price">{{ o_prix }} XAF </span>
+                            </div>
+                            <!-- <br>
+                            <div class="s_pack" *ngIf="is_pack" >
+                                <p>Choisissez votre pack</p>
+                                <button 
+                                    (click)="s_pack(p,i)" 
+                                    *ngFor="let p of packs; let i = index" 
+                                    class="btn_pck col-3"
+                                    [ngStyle]="{color: getColor(i)}">
+                                    {{p.name}}
+                                </button>
+                            </div> -->
+                            <hr>
+                            <div class="row">
+                                <a class="col-12"><i class="icon-watch"></i> Livraison en moins de 2h</a>
+                                <a class="col-12"><i class="icon-shopping-bag"></i> Produit en Stock</a>
+                                <a class="col-12"><i class="icon-award"></i> Produit 100% Naturel </a>
+
+                            </div>
+
+                            <div class="row order_button">
+                                <a class="btn col-12" (click)="addCart(produit)"><i class="icon-shopping-cart"></i> Ajouter aux panier</a>
+                            </div>
+                            <div class="row order_button" data-animate="shake">
+                                <a class="btn btn-dark col-12" routerLink="/cart" ><i class="icon-shopping-bag"></i> Panier ({{cart.length}})Produit</a>
+                            </div>
+                            <br>
+                            <p>{{description}}</p>
+                        </div>
+                        <div class="row back_product_button">
+                            <a routerLink="/shop" class="btn btn-dark col-12"> <i class="icon-arrow-left"></i> Produits</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product additional tabs -->
+                <div class="tabs tabs-folder">
+                    <ul class="nav nav-tabs" id="myTab3" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active show" id="home-tab" data-toggle="tab" href="#home3" role="tab" aria-controls="home" aria-selected="false"><i class="fa fa-align-justify"></i>témoignanges</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent3">
+                        <div class="tab-pane fade active show" id="home3" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="comments" id="comments">
+                                <div class="comment_number">
+                                    Témoignages <span>({{ sproof.length}})</span>
+                                </div>
+                                <div class="comment-list">
+                                    <!-- Comment -->
+                                    <div class="comment" id="comment-1" *ngFor="let proof of sproof">
+                                        <div class="text">
+                                            <div class="product-rate">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-o"></i>
+                                            </div>
+                                            <h5 class="name">{{ proof.name}}</h5>
+                                            <span class="comment_date">Posté le {{ proof.date }}</span>
+                                            <a class="comment-reply-link">{{proof.post}}</a>
+                                            <div class="text_holder">
+                                                <p>{{proof.content}}.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end: Comment -->
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end: Product additional tabs -->
+            </div>
+        </div>
+    </section>
+  
+   <app-footer></app-footer>
+    <!-- end: Footer -->
+</div> <!-- end: Body Inner -->
+<!-- Scroll top -->
+<app-scroll-top></app-scroll-top>

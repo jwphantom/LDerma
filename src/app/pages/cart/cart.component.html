@@ -1,0 +1,149 @@
+<div class="body-inner">
+    <!-- Header -->
+    <header id="header" data-fullwidth="true">
+        <div class="header-inner">
+            <div class="container">
+                <!--Logo-->
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.jpg" class="logo-default">
+                    </a>
+                </div>
+                <!--End: Logo-->
+                <!--Header Extras-->
+                <app-language [cart]="cart.length"></app-language>
+                <!--end: Header Extras-->
+                <!--Navigation Resposnive Trigger-->
+                <div id="mainMenu-trigger"> <a class="lines-button x"><span class="lines"></span></a> </div>
+                <!--end: Navigation Resposnive Trigger-->
+                <!--Navigation-->
+                <app-menu></app-menu>
+                <!--end: Navigation-->
+            </div>
+        </div>
+    </header>
+    <!-- end: Header -->
+    <section id="shop-cart">
+        <div class="container">
+            <div class="shop-cart">
+                <div class="table table-sm table-striped table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th *ngIf="cart.length > 0" class="cart-product-remove"></th>
+                                <th class="cart-product-thumbnail">Product</th>
+                                <th class="cart-product-price">Unit Price</th>
+                                <th class="cart-product-quantity">Quantity</th>
+                                <th class="cart-product-subtotal">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let c of cart; let i = index" >
+                                <td class="cart-product-remove">
+                                    <a (click)="remove(c,i)"><i class="fa fa-times"></i></a>
+                                </td>
+                                <td class="cart-product-thumbnail">
+                                    <div class="cart-product-thumbnail-name">{{ c[0].nom }}</div>
+                                </td>
+
+                                <td class="cart-product-price">
+                                    <span class="amount">XAF {{c[0].prix }}</span>
+                                </td>
+                                <td class="cart-product-quantity">
+                                    <div class="quantity">
+                                        {{c[0].qty }}
+                                    </div>
+                                </td>
+                                <td class="cart-product-subtotal">
+                                    <span class="amount">XAF {{ c[0].qty*c[0].prix }}</span>
+                                </td>
+                            </tr>
+
+                            <tr *ngIf="cart.length == 0">
+                                <td colspan="5" style="padding: 10px; text-align: center;">
+                                    Panier Vide
+                                </td>
+                                
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <a routerLink="/shop" class="btn btn-dark col-12"> <i class="icon-arrow-left"></i> Produits</a>
+
+                </div>
+
+                <form *ngIf="cart.length > 0" [formGroup]="billForm" (ngSubmit)="onSubmitBillForm()">
+
+                    <div class="row">
+                        <hr class="space">
+                        <div class="col-lg-6">
+                            <h4>Calculer La Livraison</h4>
+                            <div class="col-lg-12 m-b-20">
+                                <select formControlName="ville" (change)="changeVille(billForm.value)">
+                                    <option value="yde">Yaoundé</option>
+                                    <option value="dla">Douala</option>
+                                    <option value="ebwa">Ebolowa</option>
+                                    <option value="mbyo">Mbalmayo</option>
+                                    <option value="kbi">Kribi</option>
+                                    <option value="ngdere">Ngaoundere</option>
+                                    <option value="gra">Garoua</option>
+                                    <option value="mra">Maroua</option>
+                                    <option value="ost">Ouest</option>
+                                    <option value="est">Est</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-12 form-group">
+                                <input type="text" placeholder="Prénom" class="form-control" formControlName="name">
+                            </div>
+                            <div class="col-lg-12 form-group">
+                                <input type="tel" placeholder="Numéro" class="form-control" formControlName="phone">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 p-r-10 ">
+                            <div class="table-responsive">
+                                <h4>Facture</h4>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="cart-product-name">
+                                                <strong>Produits</strong>
+                                            </td>
+                                            <td class="cart-product-name text-right">
+                                                <span class="amount">XAF {{ price}}</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="cart-product-name">
+                                                <strong>Livraison</strong>
+                                            </td>
+                                            <td class="cart-product-name  text-right">
+                                                <span class="amount">{{ ship }}</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="cart-product-name">
+                                                <strong>Total</strong>
+                                            </td>
+                                            <td class="cart-product-name text-right">
+                                                <span class="amount color lead"><strong>XAF {{ price + ship }}</strong></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <button type="submit" [disabled]="true"  *ngIf="submitForm" class="btn icon-left float-right"><span><img src="assets/images/Rolling-1s-200px.svg" style="width: 14px;"> Patientez svp...</span></button>
+
+                            <button id="submitForm" type="submit" [disabled]="billForm.invalid" *ngIf="!submitForm"  class="btn icon-left float-right"><span>Passer la Commande</span></button>
+                        </div>
+                    </div>
+                </form>
+            
+            </div>
+        </div>
+    </section>
+
+
+    <app-footer></app-footer>
+</div>
+<app-scroll-top></app-scroll-top>
