@@ -1,17 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
-import { ProduitService } from 'src/app/services/produit.service';
 import { CookieService } from 'ngx-cookie-service';
-import { Product } from 'src/app/models/product'
-import { Subscription } from 'rxjs';
+import { ProduitService } from 'src/app/services/produit.service';
 
 @Component({
-  selector: 'app-product',
-  templateUrl: './product.component.html',
-  styleUrls: ['./product.component.scss']
+  selector: 'app-detox',
+  templateUrl: './detox.component.html',
+  styleUrls: ['./detox.component.scss']
 })
-export class ProductComponent implements OnInit {
+export class DetoxComponent implements OnInit {
 
   nom: String;
   prix: number;
@@ -38,7 +36,6 @@ export class ProductComponent implements OnInit {
     private title: Title,
     private cookieService: CookieService) { }
 
-
   ngOnInit() {
 
     let cartLocal = localStorage.getItem('cart');
@@ -51,7 +48,7 @@ export class ProductComponent implements OnInit {
 
 
     this.id_pack_active = 0;
-    const id = this.route.snapshot.params['id'];
+    const id = 0;
 
     this.nom = this.produitService.getProduitById(+id).nom;
     this.prix = this.produitService.getProduitById(+id).prix;
@@ -79,7 +76,7 @@ export class ProductComponent implements OnInit {
     ];
 
 
-    this.title.setTitle("LifeDerma - Produits -" + this.nom);
+    this.title.setTitle("LifeDerma - Thé Slim");
 
 
     this.loadScript('../assets/js/jquery.js');
@@ -98,25 +95,6 @@ export class ProductComponent implements OnInit {
     script.async = false;
     script.defer = true;
     body.appendChild(script);
-  }
-
-  s_pack(p, i) {
-    console.log(p);
-    this.prix = p.prix
-    this.o_prix = p.o_prix
-    this.id_pack_active = i;
-  }
-
-  getBackgroundColor() {
-    return 'yellow';
-  }
-
-  getColor(i) {
-    if (this.id_pack_active === i) {
-      return `rgb(156,182,62)`;
-    } else {
-      return 'black';
-    }
   }
 
   addCart(produit) {

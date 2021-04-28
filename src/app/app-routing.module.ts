@@ -13,6 +13,7 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
 
 import { AuthGuard } from "./shared/guard/auth.guard";
 import { CartComponent } from './pages/cart/cart.component';
+import { DetoxComponent } from './pages/shop/detox/detox.component';
 
 
 const routes: Routes = [
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'cart', component: CartComponent },
   { path: 'shop', component: ShopComponent },
+  { path: 'slim', component: DetoxComponent },
   { path : 'shop/product/:id', component: ProductComponent},
   { path : '', component: HomeComponent},
   { path: 'not-found', component: FourOhFourComponent },

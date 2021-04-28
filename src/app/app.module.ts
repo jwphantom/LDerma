@@ -41,6 +41,7 @@ import { environment } from '../environments/environment';
 import { CookieService } from 'ngx-cookie-service';
 import { CartComponent } from './pages/cart/cart.component';
 import { SpinnerComponent } from './static/spinner/spinner.component';
+import { DetoxComponent } from './pages/shop/detox/detox.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { SpinnerComponent } from './static/spinner/spinner.component';
     SigninComponent,
     CartComponent,
     SpinnerComponent,
+    DetoxComponent,
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
