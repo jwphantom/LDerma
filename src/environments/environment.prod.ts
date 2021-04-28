@@ -1,10 +1,13 @@
 export const environment = {
+  production: true,
   firebase: {
-    apiKey: 'AIzaSyCwfa_fKNCVrDMR1E88S79mpQP-6qertew4',
-    authDomain: 'bookshelves-3d570.firebaseapp.com',
-    databaseURL: 'https://bookshelves-3d570.firebaseio.com',
-    projectId: 'bookshelves-3d570',
-    storageBucket: 'bookshelves-3d570.appspot.com',
-    messagingSenderId: '6634573823'
+    apiKey: "AIzaSyAgHFRJVf8cdJ9uTgEFw8BlJXj-n19mR3c",
+    authDomain: "sbeauty-2621c.firebaseapp.com",
+    databaseURL: "https://sbeauty-2621c.firebaseio.com",
+    projectId: "sbeauty-2621c",
+    storageBucket: "sbeauty-2621c.appspot.com",
+    messagingSenderId: "1091796688580",
+    appId: "1:1091796688580:web:054422d53174616e0c3391",
+    measurementId: "G-DBY84WB3MQ"
   }
 };
